@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "fast2sms": "^1.0.3",
     "googleapis": "^169.0.0",
     "twilio": "^5.11.1"
   }

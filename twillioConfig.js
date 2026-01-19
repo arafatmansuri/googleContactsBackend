@@ -29,4 +29,14 @@ async function createMessage(
   console.log(message.body);
 }
 
-createMessage();
+// createMessage();
+async function sendSMS({text,number}={text:"Hello from Twilio!",number:"9723250547"}) {
+  const message = await client.messages.create({
+    body: text,
+    from: process.env.TWILIO_PHONE_NUMBER,
+    to: `+91${number}`,
+  });
+  console.log(message.body);
+}
+
+sendSMS();
